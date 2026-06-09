@@ -12,11 +12,11 @@ serviceAccount:
 config:
   nodeEnv: production
   port: 3000
+  portName: api-web
 
 service:
   type: ClusterIP
   port: 80
-  targetPort: 3000
 
 ingress:
   enabled: true
@@ -42,4 +42,3 @@ autoscaling:
 metrics:
   enabled: true
   path: /metrics
-  portName: api-web

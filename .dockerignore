@@ -9,3 +9,5 @@ Dockerfile
 .dockerignore
 Jenkinsfile
 README.md
+helm
+*.log
