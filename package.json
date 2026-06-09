@@ -1,0 +1,10 @@
+{
+  "name": "smaitic-devops-assignment",
+  "version": "1.0.0",
+  "description": "Simple stateless Node.js API for Kubernetes health checks and Prometheus metrics.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "build": "node --check src/server.js"
+  }
+}
