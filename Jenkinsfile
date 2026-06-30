@@ -56,7 +56,7 @@ pipeline {
     stage('Scan Docker Image') {
       steps {
         echo 'Scanning Docker image for vulnerabilities'
-        sh 'trivy image --exit-code 0 --severity HIGH,CRITICAL "$IMAGE_REPOSITORY:$IMAGE_TAG"'
+        sh 'trivy image --exit-code 1 --severity HIGH,CRITICAL "$IMAGE_REPOSITORY:$IMAGE_TAG"'
       }
     }
 
